@@ -3,3 +3,4 @@ target: api-fuzz
 cmds:
   - cmd: /h3py/mayhem/fuzz_api.py
     libfuzzer: true
+    timeout: 10
