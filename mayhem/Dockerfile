@@ -3,7 +3,7 @@ FROM fuzzers/atheris:2.0.7-python3.9
 
 ## Install build dependencies.
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y clang cmake make
+    DEBIAN_FRONTEND=noninteractive apt-get install -y clang cmake make ninja-build
 
 # Install dependencies
 ADD . /src
