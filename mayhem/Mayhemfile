@@ -1,0 +1,5 @@
+project: h3-py
+target: api-fuzz
+cmds:
+  - cmd: /h3py/mayhem/fuzz_api.py
+    libfuzzer: true
